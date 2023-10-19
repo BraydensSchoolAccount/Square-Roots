@@ -20,7 +20,8 @@ os.system("cls")
 # ad - 1/2ae + bc - dc + 1/2ec
 area_of_shape = (side_A_length * side_D_length) - (0.5 * side_A_length * side_E_length) + (side_B_length * side_C_length) - (side_D_length * side_C_length) + (0.5 * side_E_length * side_C_length)
 
-#
+# The shape needed to print, where each item is one line of the shape
+# It also formats all the numbers into it
 shape_to_print = [
     f"|---------------{side_D_length}--------------|",
     f"___________________________|_{side_E_length}_",
@@ -34,7 +35,9 @@ shape_to_print = [
 
 ]
 
+# Print the whole shape line by line
 for i in shape_to_print:
     print(i)
 
+# Finishes by putting the area of the shape
 print(f"The area of the shape is {area_of_shape}")
